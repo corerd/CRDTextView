@@ -1,6 +1,6 @@
 //
-//  DemoViewController.h
-//  Demo CRDTextView
+//  CRDTextView.h
+//  CRDTextView
 //
 /*
  The MIT License
@@ -27,15 +27,39 @@
  THE SOFTWARE.
  */
 
+/*!
+ CRDTextView Class Reference
+ 
+ The `CRDTextView` class inherits from `UILabel` and implements a read-only
+ text view adding some capabilities of a `UITextField` object:
+ - `placeholder` and `secureText` text attributes;
+ - ability to copy the `text` property value to the pasteboard.
+
+ CREDITS
+ -------
+ `CRDTextView` improves the `CopyableLabel` subclass by mrueg at [Stack Overflow]
+ ( http://stackoverflow.com/a/2168169 ).
+ */
+
 #import <UIKit/UIKit.h>
-#import "CRDTextView.h"
 
-@interface DemoViewController : UIViewController
+@interface CRDTextView : UILabel
 
-@property (weak, nonatomic) IBOutlet UITextField *txtInput;
-@property (weak, nonatomic) IBOutlet CRDTextView *txtView;
-@property (weak, nonatomic) IBOutlet UISwitch *switchReveal;
+/*!
+ The string that is displayed when there is no other text in the text field.
+ 
+ By default, this value is set to the `text` property initial value.
+ The `placeholder` string is drawn using a 70% grey color.
+ */
+@property (nonatomic, strong) NSString *placeholder;
 
-- (IBAction)toggleReveal:(id)sender;
+/*!
+ Identifies whether the text object should hide the displayed text.
+ 
+ This property is set to `NO` by default.
+ Setting this property to `YES` creates a password-style text object,
+ which hides the displayed text.
+ */
+@property (nonatomic, getter=isSecureText) BOOL secureText;
 
 @end

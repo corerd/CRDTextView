@@ -18,6 +18,7 @@
 		92F79E5E1756DAA400C188C5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 92F79E5D1756DAA400C188C5 /* Default-568h@2x.png */; };
 		92F79E611756DAA400C188C5 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F79E5F1756DAA400C188C5 /* MainStoryboard.storyboard */; };
 		92F79E641756DAA400C188C5 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F79E631756DAA400C188C5 /* DemoViewController.m */; };
+		92F79E6D1756DD3F00C188C5 /* CRDTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F79E6C1756DD3F00C188C5 /* CRDTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		92F79E601756DAA400C188C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		92F79E621756DAA400C188C5 /* DemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
 		92F79E631756DAA400C188C5 /* DemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		92F79E6B1756DD3F00C188C5 /* CRDTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRDTextView.h; sourceTree = "<group>"; };
+		92F79E6C1756DD3F00C188C5 /* CRDTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRDTextView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,7 @@
 		92F79E4D1756DAA400C188C5 /* CRDTextView */ = {
 			isa = PBXGroup;
 			children = (
+				92F79E6A1756DD3F00C188C5 /* Classes */,
 				92F79E561756DAA400C188C5 /* DemoAppDelegate.h */,
 				92F79E571756DAA400C188C5 /* DemoAppDelegate.m */,
 				92F79E5F1756DAA400C188C5 /* MainStoryboard.storyboard */,
@@ -105,6 +109,15 @@
 				92F79E5D1756DAA400C188C5 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		92F79E6A1756DD3F00C188C5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				92F79E6B1756DD3F00C188C5 /* CRDTextView.h */,
+				92F79E6C1756DD3F00C188C5 /* CRDTextView.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +190,7 @@
 				92F79E541756DAA400C188C5 /* main.m in Sources */,
 				92F79E581756DAA400C188C5 /* DemoAppDelegate.m in Sources */,
 				92F79E641756DAA400C188C5 /* DemoViewController.m in Sources */,
+				92F79E6D1756DD3F00C188C5 /* CRDTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
