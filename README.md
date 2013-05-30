@@ -1,5 +1,6 @@
 CRDTextView for iOS
 ==================
+![main](http://corerd.github.com/CRDTextView/doc/screenshots/main-r.jpg)
 
 The `CRDTextView` class inherits from `UILabel` and implements a read-only
 text view adding the following capabilities of a `UITextField` object:
