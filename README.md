@@ -1,11 +1,22 @@
 CRDTextView for iOS
 ==================
+
+The `CRDTextView` class inherits from `UILabel` and is a drop in replacement
+for `UITextField` when a read-only text view is required.
+
 ![main](http://corerd.github.com/CRDTextView/doc/screenshots/main-r.jpg)
 
-The `CRDTextView` class inherits from `UILabel` and implements a read-only
-text view adding the following capabilities of a `UITextField` object:
+Extra features
+--------------
 - `placeholder` and `secureText` text attributes;
 - ability to copy the `text` property value to the pasteboard.
+
+Usage
+-----
+To use it, add the files in the `Classes` folder to your project.
+
+In the [Wiki Home page](https://github.com/corerd/CRDTextView/wiki)
+it is dealt how to add a `CRDScrollSwitch` object using Interface Builder.
 
 The `CRDTextView` class is deployed together a demo iPhone app to show
 various use case scenarios. It has been developed as an Xcode 4.6.2 project
@@ -13,8 +24,6 @@ targeting iOS 6.1.
 
 Some screenshots of the demo app can be found [here]
 ( https://github.com/corerd/CRDTextView/wiki/Screenshots ).
-
-
 
 CREDITS
 -------
